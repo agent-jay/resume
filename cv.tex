@@ -1,0 +1,134 @@
+\documentclass{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{blindtext}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{color}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\setlist[itemize]{noitemsep, topsep=0pt}	
+\sectionfont{\fontsize{10}{12}\selectfont}
+\newcommand{\tab}[1]{\hspace{.2\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\pagenumbering{gobble}
+\begin{document}
+\begin{center}
+\begin{tabular}{c}
+\large\textbf{Harun Rashid Anver}\\
+3900 Parkview Ln, Apt 35A, Irvine CA 92612 $|$ Ph: (949)372-8706 $|$ hanver@uci.edu\\
+www.linkedin.com/in/harunrashidanver $\vert$ https://github.com/harunrashidanver/\\
+\end{tabular}
+\vbox{\hrule width 6in height 1pt}
+\end{center}
+
+\section*{EDUCATION}
+\noindent
+\textbf{Master of Science in Computer Science \hfill Dec' 2016 (Expected)}\\
+University of California, Irvine \hfill \textbf{CGPA: 3.83}\\
+\textit{Relevant Coursework:} Principles of Data Management, Transaction Processing and Distributed Data Management, Advanced Compiler Construction, Information Retrieval, Design and Analysis of Algorithms, Advanced OS\\
+\\
+\textbf{Bachelor of Engineering in Computer Science and Engineering \hfill May 2015}\\
+College of Engineering Guindy - Anna University, Chennai 	\hfill \textbf{CGPA: 9.04 / 10}\\
+\textit{Relevant Coursework:} Database Management Systems, Database Tuning, Advanced Database Technology, Principles of Compiler Design, Operating Systems, Programming and Data Structures.
+
+\section*{EXPERIENCE}
+\noindent
+\textit{Software Engineering Intern, SupplyFrame, Inc. \hfill Jun' 2016 - Present}
+\begin{itemize}
+	\item Worked on a Log processing tool that parses the access logs and extracts meaningful metrics which helped us find the most used features of the product to help in engineering the product. Technology used: \textit{Java, Maven, MongoDB}
+	\item Worked on migrating the product from Ext JS version 4 to Ext JS version 6. Technology used: \textit{Java, JSP, Ext JS, Maven, Spring}
+\end{itemize}
+\textit{Graduate Teaching Assistant, University of California Irvine \hfill Jan' 2016 - Jun' 2016}
+\begin{itemize}
+	\item Winter ’16 - Principles in System Design course (ICS 53) which involves teaching C programming, Unix/Linux software development tools like Bash scripting, GDB and system calls. Spring ’16 - How Computers Work course (ICS 10) which is primarily for non-CS majors who want to understand the overall architecture and working of a computer.
+\end{itemize}
+\textit{Software Engineering Intern, Samsung R\&D Institute, Bangalore \hfill May 2014 - Jul' 2014}
+\begin{itemize}
+	\item Sentiment Analysis on Twitter Feeds for public’s sentiments on Technology related products using Java. Used Naive Bayes and Support Vector machines to classify the tweets. Technology used: \textit{Maven}.
+	\item Collected and analyzed Twitter Feeds and improved the accuracy of classification from 60\% to 70\%.
+\end{itemize}
+\textit{Intern, Indian Institute of Technology, Madras \hfill Jun' 2013}
+\begin{itemize}
+	\item Boundary Value Analysis for the Instruction Set of Anupama, a microprocessor developed indigenously at IIT-Madras.
+\end{itemize}
+
+\section*{TECHNICAL SKILLS}
+\begin{itemize}
+	\item \itab{Languages} \tab{\textbf{Proficient:} Java, Python, C/C++, SQL; \textbf{Familiar:} Ruby, Perl, JavaScript}
+	\item \itab{Databases} \tab{\textbf{Proficient:} MySQL; \textbf{Familiar:} Oracle, MongoDB}
+	\item \itab{Packages} \tab{Netbeans, Eclipse, Android SDK, Open CV, Apache Maven, Git}
+	\item \itab{Testing Tools} \tab{JUnit, Selenium, Valgrind, GDB}
+\end{itemize}
+
+\section*{PROJECTS}
+\noindent
+\textit{Collaborative Document Editor Design and Implementation \hfill Mar' 2016 - Jun' 2016}
+\begin{itemize}
+	\item Designed and implemented a collaborative document editing system from scratch using concurrent Database Transactional concepts and a CRDT data structure (Partial Persistent Sequences). Built using \textit{Java}, \textit{Maven}.
+\end{itemize}
+\textit{Topic based Publish Subscribe system over a distributed database \hfill Mar' 2016 - Jun' 2016}
+\begin{itemize}
+	\item Designed and implemented a topic based pub/sub system over a distributed database. Brokers exploit the replicated database functionality of asynchronous updates thereby getting rid of subscription maintenance and message routing performance bottlenecks. Technology used: \textit{Voldemort DB, Java, Maven}.
+\end{itemize}
+\textit{Optimizing Compiler Design and Implementation \hfill Jan' 2016 - Mar' 2016}
+\begin{itemize}
+	\item Designed and developed an optimizing compiler for a new language “CoffeeLanguage241” from scratch using Java. The steps involved are Control flow graph generation, dominator tree construction, copy propagation, common sub expression elimination, register Allocation and code generation.
+\end{itemize}
+\textit{Search Engine for web pages in the ICS domain of UC Irvine \hfill Jan' 2016 - Mar' 2016}
+\begin{itemize}
+	\item Used web crawling to retrieve information from the internet and built an inverted index. Used tf-idf scores and Page Ranking algorithm to build a search engine for the same. Used Java and MongoDB. Web crawling was done using Crawler4j.
+\end{itemize}
+\textit{RDBMS Design and Implementation \hfill Sep' 2015 - Dec' 2015}
+\begin{itemize}
+	\item Designed and developed a Relational Database Management System named “robustoSQL” from scratch.
+	\item The major modules are Paged File Manager, Record Based File Manager, Catalog Manager, Index Manager (B+ tree) and Query Engine. Technology used: \textit{C++, Valgrind}.
+\end{itemize}
+\textit{Gesture Recognition for Air writing and Mouse interface \hfill Jan' 2015 - Apr 2015}
+\begin{itemize}
+	\item Used gesture recognition to simulate the mouse interface using Python and OpenCV.
+	\item Detected a character written with fingertip in front of a camera. Technology used: \textit{Python, Tesseract OCR}.
+\end{itemize}
+\textit{Text to Sign Language Conversion Application \hfill Oct' 2014 - Nov' 2014}
+\begin{itemize}
+	\item Developed an Android Application for converting the given text into a GIF that shows the American Sign Language representation of the text.
+\end{itemize}
+\textit{Automatic Code Punctuator \hfill Mar' 2014 - Apr' 2014}
+\begin{itemize}
+	\item Developed an automatic code punctuator for C/C++ language.
+	\item Inserted punctuation like semicolon, parenthesis and angular braces.
+	\item Technology used: Flex
+\end{itemize}
+\textit{Shopping portal Database system \hfill Jun' 2012 - Sep' 2012}
+\begin{itemize}
+	\item Designed and developed a database system for a shopping system. Technology used: \textit{Visual C++, Oracle Database}.
+\end{itemize}
+\textit{Connect 4 game \hfill Mar' 2012 - Apr' 2012}
+\begin{itemize}
+	\item Created a 2 player connect 4 game for Data Structures laboratory. Technology used: \textit{C++, BGI graphics}.
+\end{itemize}
+
+\section*{AWARDS AND ACHIEVEMENTS}
+\begin{itemize}
+	\item Participated in the \textit{ACM-ICPC} Amritapuri Regionals, 2014.
+	\item First place in onsite \textit{programming contest} of SYNC, an inter college symposium conducted by CEG.
+	\item First place in \textit{debugging} and heptathlon events at Prayatna, a national level technical symposium conducted by the department of Computer Science at Madras Institute of Technology.
+\end{itemize}
+
+\section*{PERSONAL DETAILS}
+
+\begin{tabular}{l l}
+  First Name & HARUN RASHID \\
+  Last Name & ANVER \\
+  Sex & Male \\
+  Date of Birth & December 18, 1993 \\
+  Nationality & Indian \\
+\end{tabular}
+
+
+\end{document}
