@@ -1,0 +1,5 @@
+#Ignores everything
+*
+#except for these
+!.gitignore
+!*.tex
